@@ -1,0 +1,22 @@
+.general-ul.nav-list {
+  display: flex;
+}
+
+.nav-list {
+  & .nav-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.nav-list {
+  margin-left: 86px;
+}
+
+.number-info {
+  display: flex;
+}
+.flex-boxoll {
+  display: flex;
+}
+.flex-boxnav {
+  align-items: center;
+}

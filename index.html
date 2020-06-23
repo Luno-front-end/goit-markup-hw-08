@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой ДЗ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/maine.min.css" />
+  </head>
+  <body class="body">
+    <header class="page-header">
+      <div class="container flex-boxoll flex-boxnav">
+        <nav class="flex-boxoll flex-boxnav">
+          <a href="./index.html" class="general-a logo">
+            <span class="color-logo">Web</span> Studio
+          </a>
+          <ul class="general-ul nav-list">
+            <li class="nav-item">
+              <a
+                href="./index.html"
+                class="general-nav general-a position current"
+                >Студия</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="general-nav general-a"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="general-nav general-a">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="general-ul number-info">
+          <li class="list-number">
+            <a
+              href="mailto:onlyrobochaposhta@gmail.com"
+              class="number-nav general-a"
+            >
+              <svg class="mail-icon">
+                <use href="./images/spryte.svg#mail"></use>
+              </svg>
+              onlyrobochaposhta@gmail.com
+            </a>
+          </li>
+          <li class="list-number">
+            <a href="tel:0507786155" class="number-nav general-a"
+              ><svg class="phone-icon">
+                <use href="./images/spryte.svg#phone"></use>
+              </svg>
+              0507786155
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <h1 class="title-general">эффективные решения для вашего бизнеса</h1>
+          <button class="btn" data-modal-open>Заказать услугу</button>
+        </div>
+      </section>
+      <section class="section-one">
+        <div class="container">
+          <h2 class="hidden-title">О нас</h2>
+          <ul class="general-ul general-flex section-oneli">
+            <!-- 1 -->
+            <li class="about-us">
+              <div class="link-block icon-satellite">
+                <h3 class="title-text">Внимание к деталям</h3>
+                <p class="paragraph-text">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </div>
+            </li>
+            <!-- 2 -->
+            <li class="about-us">
+              <div class="link-block icon-clock">
+                <h3 class="title-text">Пунктуальность</h3>
+                <p class="paragraph-text">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </div>
+            </li>
+            <!-- 3 -->
+            <li class="about-us">
+              <div class="link-block icon-pc">
+                <h3 class="title-text">Планирование</h3>
+                <p class="paragraph-text">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </div>
+            </li>
+            <!-- 4 -->
+            <li class="about-us">
+              <div class="link-block icon-astronaut">
+                <h3 class="title-text">Современные технологии</h3>
+                <p class="paragraph-text">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-two">
+        <div class="container">
+          <h2 class="title-h">Чем мы занимаемся</h2>
+          <ul class="general-ul general-flex work-list">
+            <li class="work-calc">
+              <div class="position">
+                <img
+                  src="./images/img1.jpg"
+                  alt="человек работает на ноутбуке"
+                  width="370"
+                  height="294"
+                />
+                <div class="text-work">
+                  <p class="text-work">Десктопные приложения</p>
+                </div>
+              </div>
+            </li>
+            <li class="work-calc">
+              <div class="position">
+                <img
+                  src="./images/img2.jpg"
+                  alt="смартфон на котором приложение"
+                  width="370"
+                  height="294"
+                />
+
+                <div class="text-work">
+                  <p class="text-work">Мобильные приложения</p>
+                </div>
+              </div>
+            </li>
+            <li class="work-calc">
+              <div class="position">
+                <img
+                  src="./images/img3.jpg"
+                  alt="персональный компьютер на котором сделан дизайн"
+                  width="370"
+                  height="294"
+                />
+
+                <div class="text-work">
+                  <p class="text-work">Дизайнерские решения</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-three">
+        <div class="container">
+          <h2 class="title-h">Наша команда</h2>
+          <ul class="general-ul general-flex work-list">
+            <!-- Джош Сміт -->
+            <li class="work-card team-calc">
+              <img
+                src="./images/photo1.jpg"
+                alt="фото Джош Сміт"
+                width="270"
+                height="260"
+              />
+              <h3 class="name-people">John Smith</h3>
+              <p class="work-people">Product Designer</p>
+              <ul class="general-ul social-network">
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="instagram">
+                      <use href="./images/spryte.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="twitter">
+                      <use href="./images/spryte.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="facebook">
+                      <use href="./images/spryte.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="linkedin">
+                      <use href="./images/spryte.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Марта Стеварт -->
+            <li class="work-card team-calc">
+              <img
+                src="./images/photo2.jpg"
+                alt="фото Марта Стеварт"
+                width="270"
+                height="260"
+              />
+              <h3 class="name-people">Marta Stewart</h3>
+              <p class="work-people">Frontend Developer</p>
+              <ul class="general-ul social-network">
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="instagram">
+                      <use href="./images/spryte.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="twitter">
+                      <use href="./images/spryte.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="facebook">
+                      <use href="./images/spryte.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="linkedin">
+                      <use href="./images/spryte.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Роберт Джахис -->
+            <li class="work-card team-calc">
+              <img
+                src="./images/photo3.jpg"
+                alt="фото Роберт Джахис"
+                width="270"
+                height="260"
+              />
+              <h3 class="name-people">Robert Jakis</h3>
+              <p class="work-people">Marketing</p>
+              <ul class="general-ul social-network">
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="instagram">
+                      <use href="./images/spryte.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="twitter">
+                      <use href="./images/spryte.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="facebook">
+                      <use href="./images/spryte.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="linkedin">
+                      <use href="./images/spryte.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Мартин Дуе -->
+            <li class="work-card team-calc">
+              <img
+                src="./images/photo4.jpg"
+                alt="фото Мартин Дуе"
+                width="270"
+                height="260"
+              />
+              <h3 class="name-people">Martin Doe</h3>
+              <p class="work-people">UI Designer</p>
+              <ul class="general-ul social-network">
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="instagram">
+                      <use href="./images/spryte.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="twitter">
+                      <use href="./images/spryte.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="facebook">
+                      <use href="./images/spryte.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="social-box"
+                    ><svg class="linkedin">
+                      <use href="./images/spryte.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-four">
+        <div class="container">
+          <h2 class="title-h">Постоянные клиенты</h2>
+          <ul class="general-ul company">
+            <li class="item-company">
+              <a href="" class="general-a company-border">
+                <svg class="logo-one">
+                  <use href="./images/spryte.svg#logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-company">
+              <a href="" class="general-a company-border">
+                <svg class="logo-two">
+                  <use href="./images/spryte.svg#logo-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-company">
+              <a href="" class="general-a company-border">
+                <svg class="logo-three">
+                  <use href="./images/spryte.svg#logo-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-company">
+              <a href="" class="general-a company-border">
+                <svg class="logo-four">
+                  <use href="./images/spryte.svg#logo-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-company">
+              <a href="" class="general-a company-border">
+                <svg class="logo-five">
+                  <use href="./images/spryte.svg#logo-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-company">
+              <a href="" class="general-a company-border">
+                <svg class="logo-six">
+                  <use href="./images/spryte.svg#logo-6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-footer">
+      <div class="container flex-footer">
+        <div class="adrfooter-div">
+          <a href="./index.html" class="general-a logo">
+            <span class="color-logo">Web</span> Studio</a
+          >
+          <address class="general-address">
+            <p class="street">г. Киев, ул.Анны Ахматовой, 25</p>
+            <ul class="general-ul address-ul">
+              <li>
+                <a href="tel:0507786155" class="general-a number-footer"
+                  >0507786155</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:onlyrobochaposhta@gmail.com"
+                  class="general-a number-footer"
+                >
+                  onlyrobochaposhta@gmail.com
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-m">
+          <h2 class="footer-heading">присоединяйтесь</h2>
+          <ul class="general-ul general-flex">
+            <li class="item">
+              <a href="" class="general-a fsocial-box">
+                <svg class="instagram-two">
+                  <use href="./images/spryte.svg#instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="general-a fsocial-box">
+                <svg class="twitter-two">
+                  <use href="./images/spryte.svg#twitter-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="general-a fsocial-box">
+                <svg class="facebook-two">
+                  <use href="./images/spryte.svg#facebook-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="general-a fsocial-box">
+                <svg class="linkedin-two">
+                  <use href="./images/spryte.svg#linkedin-2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form action="" class="ssfooter-div">
+          <h2 class="footer-heading">Подпишитесь на рассылку</h2>
+          <div class="flex-sub">
+            <label></label>
+              <input type="text" name="Email" class="input" placeholder="E-mail"/>
+              <button class="footerbtn-text icon-btn">
+                Подписаться
+              </button> 
+              </label>
+          </div>
+        </form>
+      </div>
+      <!-- <p class="copyright">2020 | Developed by GoIT Students</p> -->
+    </footer>
+    <!-- modal -->
+    <div role="group" class="modal is-hidden" data-modal>
+      <form action="" class="modal-form" autocomplete="off">
+        <button class="btn-close" data-modal-close></button>
+        <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
+<ul class="general-ul">
+        <li class="form-input">
+          <label>
+            <input
+              type="text"
+              name="name"
+              placeholder=" "
+              class="input-modal"
+            /><svg class="images-modal">
+              <use href="./images/spryte.svg#name"></use>
+            </svg>
+            <span class="text-form">Имя</span>
+          </label>
+        </li>
+        <li class="form-input">
+          <label>
+            <input
+              type="tel"
+              name="tel"
+              placeholder=" "
+              class="input-modal"
+            /><svg class="images-modal">
+              <use href="./images/spryte.svg#tel"></use>
+            </svg>
+            <span class="text-form">Телефон</span> 
+            </label>
+        </li>
+        <li class="form-input">
+          <label>
+            <input
+              type="email"
+              name="email"
+              placeholder=" "
+              class="input-modal"
+            /><svg class="images-modal">
+              <use href="./images/spryte.svg#email"></use>
+            </svg>
+            <span class="text-form">Почта</span> 
+          </label>
+        </li>
+        <li class="form-inputcom">
+          <label>
+            <textarea name="comment" placeholder=" " class="input-textarea"></textarea>
+            <span class="text-formcom">Комментарий</span>
+          </label>
+        </li>
+        <li>
+        <label class="policy"
+          ><input
+            class="policy-input"
+            name="policy"
+            type="checkbox"
+            value="policy"
+          />Соглашаюсь с рассылкой и принимаю
+          <a href="" class="general-a">Условия договора</a>
+          <span class="icon-modal"></span>
+        </label>
+        </li>
+</ul>
+        <button type="submit" class="btn-modal">Отправить</button>
+      </form>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

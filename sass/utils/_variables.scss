@@ -1,0 +1,26 @@
+$bg-white-text: rgba(148, 148, 148, 0.103);
+$primary-text-color: #212121;
+$acent-text-color: #2196f3;
+$primery-text-white: #ffffff;
+$connection: #757575;
+$bg-none-light: #f5f4fa;
+$footer-number: rgba(255, 255, 255, 0.6);
+$footer-year: rgba(255, 255, 255, 0.4);
+$bg-footer: #2f303a;
+$incogniti-gb-card-portfolio: rgba(33, 150, 243, 0.9);
+$icon-current-color: #afb1b8;
+$modal-bg: rgba(0, 0, 0, 0.2);
+
+@mixin border() {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+$icon: 'satellite', 'clock', 'pc', 'astronaut';
+
+@each $iconName in $icon {
+  .icon-#{$iconName}::before {
+    background-image: url('../images/#{$iconName}.svg');
+  }
+}
