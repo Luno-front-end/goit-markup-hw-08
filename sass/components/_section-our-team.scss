@@ -1,0 +1,56 @@
+.name-people {
+  margin-top: 30px;
+  margin-bottom: 0px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.team-calc {
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
+  }
+}
+
+.work-people {
+  color: $connection;
+
+  margin-top: 10px;
+  margin-bottom: 0px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.social-network {
+  margin-top: 16px;
+
+  display: flex;
+  justify-content: center;
+}
+.section {
+  background-color: $bg-none-light;
+}
+.social-box {
+  display: flex;
+  align-items: center;
+  background-color: $primery-text-white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $acent-text-color;
+  }
+  &:focus {
+    background-color: $acent-text-color;
+  }
+}

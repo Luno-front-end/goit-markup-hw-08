@@ -1,0 +1,17 @@
+.section-one {
+  & .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.about-us {
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
+  }
+}

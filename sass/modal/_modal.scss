@@ -1,0 +1,234 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: $modal-bg;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal.is-hidden {
+  & .modal-form {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+}
+.modal-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+
+  background-color: $primery-text-white;
+
+  padding: 40px 40px;
+
+  width: 528px;
+  height: 581px;
+  margin: 0 auto;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.input-modal {
+  width: 448px;
+  height: 40px;
+
+  padding: 12px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: inline-block;
+  outline: none;
+  &:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+  }
+}
+
+.input-textarea {
+  width: 448px;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+  outline: none;
+  &:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+  }
+}
+.policy {
+  position: relative;
+  display: inline-block;
+  color: $connection;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 30px;
+  & .general-a {
+    display: inline-block;
+    color: $acent-text-color;
+    text-decoration: underline;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+.policy-input {
+  margin-left: 23.48px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.btn-modal {
+  padding: 10px 55px;
+
+  background: $acent-text-color;
+  color: $primery-text-white;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+}
+
+.form-input {
+  position: relative;
+  margin-bottom: 28px;
+}
+.form-inputcom {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.text-formcom {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: inline-block;
+
+  color: $connection;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    line-height 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-form {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  display: inline-block;
+
+  color: $connection;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    line-height 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.images-modal {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  fill: $primary-text-color;
+
+  display: inline-block;
+
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-modal:focus ~ .text-form,
+.input-modal:not(:placeholder-shown) ~ .text-form {
+  transform: translate(-24px, -38px);
+  color: $acent-text-color;
+  font-size: 12px;
+  line-height: 1.16;
+}
+.input-modal:focus ~ .images-modal {
+  fill: $acent-text-color;
+}
+.input-textarea:focus + .text-formcom,
+.input-textarea:not(:placeholder-shown) + .text-formcom {
+  transform: translateY(-21px);
+  color: $acent-text-color;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+.icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+
+  transform: translateY(-50%);
+}
+.policy-input:checked ~ .icon-modal {
+  background-color: $acent-text-color;
+  background-image: url(../images/checked.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $acent-text-color;
+}
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/close-modal.svg);
+  background-color: $primery-text-white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}

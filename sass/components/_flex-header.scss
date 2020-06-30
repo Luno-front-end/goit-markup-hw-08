@@ -1,0 +1,28 @@
+.general-ul.nav-list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.nav-list {
+  & .nav-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.nav-list {
+  margin-left: 86px;
+}
+
+.number-info {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+.flex-boxoll {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+.flex-boxnav {
+  align-items: center;
+}
