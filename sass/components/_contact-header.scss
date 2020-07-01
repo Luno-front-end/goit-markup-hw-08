@@ -59,11 +59,19 @@
 //   display: flex;
 // }
 .number-info {
-  & .list-number:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: $desktop) {
+    & .list-number:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .number-info {
   margin-left: auto;
 }
+//  @media screen and (min-width: $tablets) {
+//     margin-left: 84px;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     margin-left: auto;
+//   }

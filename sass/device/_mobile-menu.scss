@@ -1,0 +1,40 @@
+.page-header {
+  position: relative;
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+
+  & .icon-close {
+    display: none;
+  }
+  &.is-open {
+    & .icon-close {
+      display: block;
+    }
+    & .icon-menumob {
+      display: none;
+    }
+  }
+}
+.menu-mobile {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  width: 100%;
+  background-color: $primery-text-white;
+  //   display: none;
+  //   text-align: center;
+  &.is-open {
+    display: block;
+  }
+}
+
+// .icon-close {
+// }
+// .icon-menumob {
+// }

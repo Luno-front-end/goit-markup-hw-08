@@ -109,7 +109,7 @@ img {
   padding-right: 15px;
 }
 
-@media screen and (max-width: 480px), screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -265,12 +265,22 @@ img {
   fill: #2196f3;
 }
 
-.number-info .list-number:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .number-info .list-number:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .number-info {
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .general-ul.nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -285,12 +295,36 @@ img {
   margin-right: 50px;
 }
 
-.nav-list {
-  margin-left: 86px;
+@media screen and (min-width: 768px) {
+  .nav-list {
+    margin-left: 81px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    margin-left: 86px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .number-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .flex-boxoll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-boxoll {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -547,16 +581,7 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (max-width: 480px) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-mobile.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-mobile.jpg");
-    background-size: 480px 400px;
-    width: 480px;
-    height: 400px;
-  }
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 480px) {
@@ -564,7 +589,7 @@ img {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-mobile.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-mobile.jpg");
     background-size: 480px 400px;
-    width: 480px;
+    max-width: 480px;
     height: 400px;
   }
 }
@@ -574,8 +599,18 @@ img {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-tablets.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-tablets.jpg");
     background-size: 768px 400px;
-    width: 768px;
+    max-width: 768px;
     height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header.jpg");
+    background-size: 1600px 600px;
+    max-width: 1600px;
+    height: 600px;
   }
 }
 
@@ -583,17 +618,9 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
-  .hero-container {
-    max-width: 360px;
-    height: 400px;
-    padding-top: 118px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .hero-container {
-    max-width: 480px;
+    max-width: 360px;
     height: 400px;
     padding-top: 118px;
   }
@@ -609,7 +636,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero-container {
-    width: 1200px;
+    max-width: 696px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -622,18 +649,22 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 26px;
-  line-height: 1.62;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 480px) {
+  .title-general {
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .title-general {
     font-size: 44px;
     line-height: 1.4;
-    width: 646px;
   }
 }
 
@@ -1368,5 +1399,44 @@ img {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-tablets@3x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-tablets@3x.jpg");
   }
+}
+
+.page-header {
+  position: relative;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menumob {
+  display: none;
+}
+
+.menu-mobile {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.menu-mobile.is-open {
+  display: block;
 }
 /*# sourceMappingURL=maine.css.map */

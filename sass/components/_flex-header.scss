@@ -1,4 +1,7 @@
 .general-ul.nav-list {
+  @media screen and (min-width: $tablets) {
+    display: flex;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
   }
@@ -10,7 +13,12 @@
   }
 }
 .nav-list {
-  margin-left: 86px;
+  @media screen and (min-width: $tablets) {
+    margin-left: 81px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 86px;
+  }
 }
 
 .number-info {
@@ -19,6 +27,12 @@
   }
 }
 .flex-boxoll {
+  @media screen and (min-width: $mobile) {
+    display: flex;
+  }
+  @media screen and (min-width: $tablets) {
+    display: flex;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
   }
