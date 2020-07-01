@@ -20,21 +20,38 @@
       display: none;
     }
   }
-}
-.menu-mobile {
-  position: absolute;
-  top: 100%;
-  bottom: 0;
-  width: 100%;
-  background-color: $primery-text-white;
-  //   display: none;
-  //   text-align: center;
-  &.is-open {
-    display: block;
+  @media screen and (min-width: $tablets) {
+    display: none;
   }
 }
 
-// .icon-close {
-// }
-// .icon-menumob {
-// }
+.menu-mobile {
+  @media screen and (max-width: $tablets-min) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $primery-text-white;
+    display: none;
+    text-align: center;
+    &.is-open {
+      display: block;
+    }
+  }
+}
+
+.container {
+  &.flex-boxoll {
+    &.flex-boxnav {
+      @media screen and (max-width: $tablets-min) {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablets) {
+  .menu-mobile {
+    margin-left: 81px;
+  }
+}

@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $tablets-min) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
@@ -45,16 +45,12 @@
 
 .hero-container {
   margin: 0 auto;
-  // @media screen and (max-width: $mobile) {
-  //   max-width: 360px;
-  //   height: 400px;
-  //   padding-top: 118px;
-  // }
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $tablets-min) {
     max-width: 360px;
     height: 400px;
     padding-top: 118px;
   }
+
   @media screen and (min-width: $tablets) {
     max-width: 360px;
     height: 400px;
@@ -79,7 +75,7 @@
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $tablets-min) {
     font-size: 26px;
     line-height: 1.62;
   }

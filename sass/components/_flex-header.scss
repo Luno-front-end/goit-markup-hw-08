@@ -13,9 +13,6 @@
   }
 }
 .nav-list {
-  @media screen and (min-width: $tablets) {
-    margin-left: 81px;
-  }
   @media screen and (min-width: $desktop) {
     margin-left: 86px;
   }
@@ -27,9 +24,6 @@
   }
 }
 .flex-boxoll {
-  @media screen and (min-width: $mobile) {
-    display: flex;
-  }
   @media screen and (min-width: $tablets) {
     display: flex;
   }

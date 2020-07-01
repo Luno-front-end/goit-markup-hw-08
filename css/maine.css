@@ -295,12 +295,6 @@ img {
   margin-right: 50px;
 }
 
-@media screen and (min-width: 768px) {
-  .nav-list {
-    margin-left: 81px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .nav-list {
     margin-left: 86px;
@@ -309,14 +303,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .number-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .flex-boxoll {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -584,7 +570,7 @@ img {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-mobile.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-mobile.jpg");
@@ -618,7 +604,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero-container {
     max-width: 360px;
     height: 400px;
@@ -654,7 +640,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .title-general {
     font-size: 26px;
     line-height: 1.62;
@@ -1428,15 +1414,38 @@ img {
   display: none;
 }
 
-.menu-mobile {
-  position: absolute;
-  top: 100%;
-  bottom: 0;
-  width: 100%;
-  background-color: #ffffff;
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
-.menu-mobile.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .menu-mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: none;
+    text-align: center;
+  }
+  .menu-mobile.is-open {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container.flex-boxoll.flex-boxnav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    margin-left: 81px;
+  }
 }
 /*# sourceMappingURL=maine.css.map */
