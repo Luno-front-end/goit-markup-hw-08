@@ -9,7 +9,9 @@
 
 .nav-list {
   & .nav-item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: $tablets) {
+      margin-right: 50px;
+    }
   }
 }
 .nav-list {
