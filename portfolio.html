@@ -17,49 +17,53 @@
 
   <body class="body">
     <header class="header-portfolio">
-      <div class="container flex-boxoll flex-boxnav">
-        <nav class="flex-boxoll flex-boxnav">
-          <a href="./index.html" class="general-a logo">
-            <span class="color-logo">Web</span> Studio
-          </a>
+    <div class=" container flex-boxoll flex-boxnav">
+      <a href="./index.html" class="general-a logo">
+        <span class="color-logo">Web</span>&nbsp;Studio
+      </a>
+      <div class="menu-mobile flex-boxoll flex-boxnav" data-menu>
+        <nav>
+    
           <ul class="general-ul nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="general-nav general-a">Студия</a>
+              <a href="./index.html" class="general-nav general-a ">Студия</a>
             </li>
             <li class="nav-item">
-              <a
-                href="./portfolio.html"
-                class="general-nav general-a position current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="general-nav general-a position current">Портфолио</a>
             </li>
             <li class="nav-item">
               <a href="" class="general-nav general-a">Контакты</a>
             </li>
           </ul>
         </nav>
+    
+    
         <ul class="general-ul number-info">
           <li class="list-number">
-            <a
-              href="mailto:onlyrobochaposhta@gmail.com"
-              class="number-nav general-a"
-            >
+            <a href="mailto:onlyrobochaposhta@gmail.com" class="number-nav general-a">
               <svg class="mail-icon">
                 <use href="./images/spryte.svg#mail"></use>
               </svg>
-              onlyrobochaposhta@gmail.com
+              onlyrob@gmail.com
             </a>
           </li>
           <li class="list-number">
-            <a href="tel:0507786155" class="number-nav general-a"
-              ><svg class="phone-icon">
+            <a href="tel:0507786155" class="number-nav general-a"><svg class="phone-icon">
                 <use href="./images/spryte.svg#phone"></use>
               </svg>
-              0507786155
+              +38 050 778 61 55
             </a>
           </li>
         </ul>
+    
       </div>
+      <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+          <use class="icon-close" href="./images/spryte.svg#menu-close"></use>
+          <use class="icon-menumob" href="./images/spryte.svg#menu-mobile"></use>
+        </svg>
+      </button>
+    </div>
     </header>
     <main>
       <section>
@@ -375,5 +379,6 @@
       </div>
       <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

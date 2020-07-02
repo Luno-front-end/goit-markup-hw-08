@@ -1,3 +1,13 @@
+.adrfooter-div {
+  @media screen and (max-width: $tablets-min) {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $tablets) {
+    margin-top: 60px;
+  }
+}
+
 .number-footer {
   color: $footer-number;
 
@@ -9,7 +19,6 @@
 .street {
   color: $primery-text-white;
 
-  width: 231px;
   height: 21px;
 
   margin-top: 10px;
@@ -18,6 +27,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  @media screen and (min-width: $desktop) {
+    width: 231px;
+  }
 }
 .fsocial-box {
   display: flex;
@@ -39,9 +51,17 @@
   }
 }
 .address-ul {
-  width: 231px;
   height: 21px;
 
   margin-top: 9px;
   margin-bottom: 28px;
+  @media screen and (min-width: $desktop) {
+    width: 231px;
+  }
 }
+// .center {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+// }

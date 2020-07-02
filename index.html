@@ -16,54 +16,72 @@
   </head>
   <body class="body">
     <header class="page-header">
-      <div class=" container flex-boxoll flex-boxnav">
-    <a href="./index.html" class="general-a logo">
-      <span class="color-logo">Web</span> Studio
-    </a>
-    <div class="menu-mobile flex-boxoll flex-boxnav" data-menu>
-      <nav class="">
-    
-      <ul class="general-ul nav-list">
-        <li class="nav-item">
-          <a href="./index.html" class="general-nav general-a position current">Студия</a>
-        </li>
-        <li class="nav-item">
-          <a href="./portfolio.html" class="general-nav general-a">Портфолио</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="general-nav general-a">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    
-    <div>
-      <ul class="general-ul number-info">
-        <li class="list-number">
-          <a href="mailto:onlyrobochaposhta@gmail.com" class="number-nav general-a">
-            <svg class="mail-icon">
-              <use href="./images/spryte.svg#mail"></use>
-            </svg>
-            onlyrob@gmail.com
-          </a>
-        </li>
-        <li class="list-number">
-          <a href="tel:0507786155" class="number-nav general-a"><svg class="phone-icon">
-              <use href="./images/spryte.svg#phone"></use>
-            </svg>
-            +38 050 778 61 55
-          </a>
-        </li>
-      </ul>
-    </div>
-    </div>
-        <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
-          <svg width="40" height="40" aria-label="переключатель мобильного меню">
+      <div class="container flex-boxoll flex-boxnav">
+        <a href="./index.html" class="general-a logo">
+          <span class="color-logo">Web</span>&nbsp;Studio
+        </a>
+        <div class="menu-mobile flex-boxoll flex-boxnav" data-menu>
+          <nav>
+            <ul class="general-ul nav-list">
+              <li class="nav-item">
+                <a
+                  href="./index.html"
+                  class="general-nav general-a position current"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./portfolio.html" class="general-nav general-a"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="" class="general-nav general-a">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="general-ul number-info">
+            <li class="list-number">
+              <a
+                href="mailto:onlyrobochaposhta@gmail.com"
+                class="number-nav general-a"
+              >
+                <svg class="mail-icon">
+                  <use href="./images/spryte.svg#mail"></use>
+                </svg>
+                onlyrob@gmail.com
+              </a>
+            </li>
+            <li class="list-number">
+              <a href="tel:0507786155" class="number-nav general-a"
+                ><svg class="phone-icon">
+                  <use href="./images/spryte.svg#phone"></use>
+                </svg>
+                +38 050 778 61 55
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
             <use class="icon-close" href="./images/spryte.svg#menu-close"></use>
-            <use class="icon-menumob" href="./images/spryte.svg#menu-mobile"></use>
+            <use
+              class="icon-menumob"
+              href="./images/spryte.svg#menu-mobile"
+            ></use>
           </svg>
         </button>
-  </div>
-     
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -171,15 +189,21 @@
         <div class="container">
           <h2 class="title-h">Наша команда</h2>
           <ul class="general-ul general-flex work-list">
-            <!-- Джош Сміт -->
+            <!-- Николай Кучеренко -->
             <li class="work-card team-calc">
-              <img
-                src="./images/photo1.jpg"
-                alt="фото Джош Сміт"
-                width="270"
-                height="260"
-              />
-              <h3 class="name-people">John Smith</h3>
+              <div class="thumb">
+                <img
+                  srcset="
+                    ./images/photo1.jpg    1x,
+                    ./images/photo1@2x.jpg 2x,
+                    ./images/photo1@3x.jpg 3x
+                  "
+                  src="./images/photo1.jpg"
+                  alt="фото Николай Кучеренко"
+                  class="photo-set"
+                />
+              </div>
+              <h3 class="name-people">Николай Кучеренко</h3>
               <p class="work-people">Product Designer</p>
               <ul class="general-ul social-network">
                 <li class="item">
@@ -212,15 +236,21 @@
                 </li>
               </ul>
             </li>
-            <!-- Марта Стеварт -->
+            <!-- Ольга Иванова -->
             <li class="work-card team-calc">
-              <img
-                src="./images/photo2.jpg"
-                alt="фото Марта Стеварт"
-                width="270"
-                height="260"
-              />
-              <h3 class="name-people">Marta Stewart</h3>
+              <div class="thumb">
+                <img
+                  srcset="
+                    ./images/photo2.jpg    1x,
+                    ./images/photo2@2x.jpg 2x,
+                    ./images/photo2@3x.jpg 3x
+                  "
+                  src="./images/photo2.jpg"
+                  alt="фото Ольга Иванова"
+                  class="photo-set"
+                />
+              </div>
+              <h3 class="name-people">Ольга Иванова</h3>
               <p class="work-people">Frontend Developer</p>
               <ul class="general-ul social-network">
                 <li class="item">
@@ -253,15 +283,21 @@
                 </li>
               </ul>
             </li>
-            <!-- Роберт Джахис -->
+            <!-- Андрей Шевченко -->
             <li class="work-card team-calc">
-              <img
-                src="./images/photo3.jpg"
-                alt="фото Роберт Джахис"
-                width="270"
-                height="260"
-              />
-              <h3 class="name-people">Robert Jakis</h3>
+              <div class="thumb">
+                <img
+                  srcset="
+                    ./images/photo3.jpg    1x,
+                    ./images/photo3@2x.jpg 2x,
+                    ./images/photo3@3x.jpg 3x
+                  "
+                  src="./images/photo3.jpg"
+                  alt="фото Андрей Шевченко"
+                  class="photo-set"
+                />
+              </div>
+              <h3 class="name-people">Андрей Шевченко</h3>
               <p class="work-people">Marketing</p>
               <ul class="general-ul social-network">
                 <li class="item">
@@ -294,15 +330,21 @@
                 </li>
               </ul>
             </li>
-            <!-- Мартин Дуе -->
+            <!-- Иван Николаев -->
             <li class="work-card team-calc">
-              <img
-                src="./images/photo4.jpg"
-                alt="фото Мартин Дуе"
-                width="270"
-                height="260"
-              />
-              <h3 class="name-people">Martin Doe</h3>
+              <div class="thumb">
+                <img
+                  srcset="
+                    ./images/photo4.jpg    1x,
+                    ./images/photo4@2x.jpg 2x,
+                    ./images/photo4@3x.jpg 3x
+                  "
+                  src="./images/photo4.jpg"
+                  alt="фото Иван Николаев"
+                  class="photo-set"
+                />
+              </div>
+              <h3 class="name-people">Иван Николаев</h3>
               <p class="work-people">UI Designer</p>
               <ul class="general-ul social-network">
                 <li class="item">
@@ -446,15 +488,20 @@
             </li>
           </ul>
         </div>
-        <form action="" class="ssfooter-div">
+        <form class="ssfooter-div">
           <h2 class="footer-heading">Подпишитесь на рассылку</h2>
           <div class="flex-footer">
-            <label></label>
-              <input type="text" name="Email" class="input" placeholder="E-mail"/>
-              <button class="footerbtn-text icon-btn">
-                Подписаться
-              </button> 
-              </label>
+            <label>
+              <input
+                type="text"
+                name="Email"
+                class="input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="button" class="footerbtn-text icon-btn">
+              Подписаться
+            </button>
           </div>
         </form>
       </div>
@@ -462,68 +509,72 @@
     </footer>
     <!-- modal -->
     <div role="group" class="modal is-hidden" data-modal>
-      <form action="" class="modal-form" autocomplete="off">
+      <form class="modal-form" autocomplete="off">
         <button class="btn-close" data-modal-close></button>
         <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
-<ul class="general-ul">
-        <li class="form-input">
-          <label>
-            <input
-              type="text"
-              name="name"
-              placeholder=" "
-              class="input-modal"
-            /><svg class="images-modal">
-              <use href="./images/spryte.svg#name"></use>
-            </svg>
-            <span class="text-form">Имя</span>
-          </label>
-        </li>
-        <li class="form-input">
-          <label>
-            <input
-              type="tel"
-              name="tel"
-              placeholder=" "
-              class="input-modal"
-            /><svg class="images-modal">
-              <use href="./images/spryte.svg#tel"></use>
-            </svg>
-            <span class="text-form">Телефон</span> 
+        <ul class="general-ul">
+          <li class="form-input">
+            <label>
+              <input
+                type="text"
+                name="name"
+                placeholder=" "
+                class="input-modal"
+              /><svg class="images-modal">
+                <use href="./images/spryte.svg#name"></use>
+              </svg>
+              <span class="text-form">Имя</span>
             </label>
-        </li>
-        <li class="form-input">
-          <label>
-            <input
-              type="email"
-              name="email"
-              placeholder=" "
-              class="input-modal"
-            /><svg class="images-modal">
-              <use href="./images/spryte.svg#email"></use>
-            </svg>
-            <span class="text-form">Почта</span> 
-          </label>
-        </li>
-        <li class="form-inputcom">
-          <label>
-            <textarea name="comment" placeholder=" " class="input-textarea"></textarea>
-            <span class="text-formcom">Комментарий</span>
-          </label>
-        </li>
-        <li>
-        <label class="policy"
-          ><input
-            class="policy-input"
-            name="policy"
-            type="checkbox"
-            value="policy"
-          />Соглашаюсь с рассылкой и принимаю
-          <a href="" class="general-a">Условия договора</a>
-          <span class="icon-modal"></span>
-        </label>
-        </li>
-</ul>
+          </li>
+          <li class="form-input">
+            <label>
+              <input
+                type="tel"
+                name="tel"
+                placeholder=" "
+                class="input-modal"
+              /><svg class="images-modal">
+                <use href="./images/spryte.svg#tel"></use>
+              </svg>
+              <span class="text-form">Телефон</span>
+            </label>
+          </li>
+          <li class="form-input">
+            <label>
+              <input
+                type="email"
+                name="email"
+                placeholder=" "
+                class="input-modal"
+              /><svg class="images-modal">
+                <use href="./images/spryte.svg#email"></use>
+              </svg>
+              <span class="text-form">Почта</span>
+            </label>
+          </li>
+          <li class="form-inputcom">
+            <label>
+              <textarea
+                name="comment"
+                placeholder=" "
+                class="input-textarea"
+              ></textarea>
+              <span class="text-formcom">Комментарий</span>
+            </label>
+          </li>
+          <li>
+            <label class="policy"
+              ><input
+                class="policy-input"
+                name="policy"
+                type="checkbox"
+                value="policy"
+              />Соглашаюсь с рассылкой и принимаю
+              <a href="" class="general-a">Условия договора</a>
+              <span class="icon-modal"></span>
+            </label>
+          </li>
+        </ul>
         <button type="submit" class="btn-modal">Отправить</button>
       </form>
     </div>

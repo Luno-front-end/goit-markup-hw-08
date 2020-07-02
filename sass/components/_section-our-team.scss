@@ -8,12 +8,25 @@
   text-align: center;
 }
 .team-calc {
-  @media screen and (min-width: $desktop) {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    &:nth-child(4n) {
-      margin-right: 0px;
+  @media screen and (max-width: $tablets-min) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
+  }
+  @media screen and (min-width: $tablets) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+}
+.work-list {
+  @media screen and (min-width: $tablets) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -53,4 +66,8 @@
   &:focus {
     background-color: $acent-text-color;
   }
+}
+.photo-set {
+  display: block;
+  width: 100%;
 }

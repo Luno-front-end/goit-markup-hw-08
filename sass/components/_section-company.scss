@@ -8,7 +8,6 @@
   display: flex;
   align-items: center;
 
-  width: 170px;
   height: 90px;
 
   border: 1px solid #afb1b8;
@@ -21,6 +20,13 @@
   }
   &:focus {
     border-color: $acent-text-color;
+  }
+
+  @media screen and (min-width: $tablets) {
+    width: 226px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }
 
@@ -62,19 +68,40 @@
 }
 
 .company {
+  @media screen and (max-width: $tablets-min) {
+    margin: -15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $tablets) {
+    margin: -15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   @media screen and (min-width: $desktop) {
+    margin: -15px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
   }
 }
+
 .item-company {
+  display: inline-block;
+  @media screen and (max-width: $tablets-min) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: $tablets) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+
   @media screen and (min-width: $desktop) {
-    width: calc((100% - 150px) / 6);
-    margin-right: 30px;
-    &:nth-child(6n) {
-      margin-right: 0px;
-    }
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
   }
 }
 

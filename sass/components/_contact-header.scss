@@ -18,6 +18,14 @@
   }
 }
 
+.number-info {
+  & > .list-number {
+    @media screen and (max-width: $tablets-min) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
 .phone-icon {
   fill: $connection;
   width: 10px;
@@ -63,6 +71,10 @@
     & .list-number:not(:last-child) {
       margin-right: 30px;
     }
+  }
+  @media screen and (max-width: $tablets-min) {
+    margin-bottom: 60px;
+    margin-top: 60px;
   }
 }
 

@@ -1,5 +1,8 @@
 .bg-footer {
   background-color: $bg-footer;
+  @media screen and (max-width: $tablets-min) {
+    padding-top: 60px;
+  }
 }
 .bg-footer {
   & .container {
@@ -10,9 +13,11 @@
 .general-address {
   font-style: normal;
 
-  width: 231px;
+  @media screen and (min-width: $desktop) {
+    width: 231px;
 
-  margin-right: 69px;
+    margin-right: 69px;
+  }
 }
 
 .footer-m {
