@@ -62,6 +62,21 @@ img {
   &:focus {
     outline: 2px solid $primery-text-white;
   }
+  @media screen and (max-width: $tablets-min) {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  // @media screen and (min-width: $tablets) {
+  //   margin-top: 20px;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
+  @media screen and (max-width: $desktop-min) {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .input {

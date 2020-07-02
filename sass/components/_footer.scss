@@ -3,7 +3,11 @@
   @media screen and (max-width: $tablets-min) {
     padding-top: 60px;
   }
+  // @media screen and (min-width: $tablets) {
+  //   padding-top: 60px;
+  // }
 }
+
 .bg-footer {
   & .container {
     padding-bottom: 60px;
@@ -32,14 +36,23 @@
   margin-top: 0px;
   margin-bottom: 21px;
 
-  margin-right: 0px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  @media screen and (max-width: $tablets-min) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 0px;
+  }
 }
-
+.flex-mobfooter {
+  @media screen and (max-width: $tablets-min) {
+    display: flex;
+  }
+}
 .flex-footer {
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -48,6 +61,23 @@
 
 .general-flex .item:not(:last-child) {
   margin-right: 10px;
+}
+
+.container-footer {
+  // @media screen and (min-width: $tablets) {
+  //   margin-left: 82px;
+  //   margin-right: 82px;
+  // }
+  // @media screen and (max-width: $desktop-min) {
+
+  // }
+  @media screen and (min-width: $tablets) {
+    display: flex;
+  }
+  @media screen and (min-width: $tablets) and (max-width: $desktop-min) {
+    margin-left: 82px;
+    margin-right: 82px;
+  }
 }
 
 // .copyright {

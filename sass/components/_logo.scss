@@ -11,3 +11,11 @@
 .adrfooter-div .general-a.logo {
   color: $primery-text-white;
 }
+.adrfooter-div {
+  @media screen and (max-width: $tablets-min) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablets) {
+    margin-top: 60px;
+  }
+}

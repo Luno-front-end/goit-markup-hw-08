@@ -1,9 +1,5 @@
 .adrfooter-div {
-  @media screen and (max-width: $tablets-min) {
-    margin: 0 auto;
-  }
-
-  @media screen and (min-width: $tablets) {
+  @media screen and (min-width: $desktop) {
     margin-top: 60px;
   }
 }
