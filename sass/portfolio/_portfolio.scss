@@ -158,12 +158,12 @@
   }
   @media screen and (min-width: $tablets) {
     width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
   @media screen and (min-width: $desktop) {
     width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
   }
-
-  margin: 15px;
 }
 
 .flex-li .general-a {

@@ -32,6 +32,7 @@
 
   margin-left: auto;
   margin-right: auto;
+  margin-top: 93px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,16 +100,19 @@
 
   resize: none;
   outline: none;
-  &:focus {
-    border: 1px solid #2196f3;
-    border-radius: 4px;
+  @media screen and (max-width: $mobile-min) {
+    width: 100%;
   }
   @media screen and (min-width: $mobile) {
-    width: 370px;
+    width: 100%;
   }
 
   @media screen and (min-width: $desktop) {
     width: 448px;
+  }
+  &:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
   }
 }
 .policy {
