@@ -20,5 +20,7 @@
   }
 }
 .section-oneli {
-  margin: -15px;
+  @media screen and (min-width: $tablets) {
+    margin: -15px;
+  }
 }
